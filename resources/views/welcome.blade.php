@@ -10,7 +10,11 @@
             margin: 0; 
             padding: 0; 
             box-sizing: border-box; 
+<<<<<<< HEAD
             font-family: 'Poppins', sans-serif;
+=======
+            font-family: 'Poppins', sans-serif; /* Menggunakan Poppins */
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         }
 
         body, html {
@@ -79,6 +83,7 @@
             <p>Kelola semua pembayaran Anda dalam satu akun.</p>
         </div>
         <div class="btn-group">
+<<<<<<< HEAD
             <!-- Tombol Daftar -->
             <a href="{{ url('/daftar') }}" class="btn btn-daftar">Daftar</a>
             <!-- Tombol Login diarahkan ke /masuk -->
@@ -87,3 +92,11 @@
     </div>
 </body>
 </html>
+=======
+            <a href="{{ url('/daftar') }}" class="btn btn-daftar">Daftar</a>
+            <button class="btn btn-login">Login</button>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d

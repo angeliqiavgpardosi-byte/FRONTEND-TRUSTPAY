@@ -7,34 +7,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+<<<<<<< HEAD
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body, html { height: 100%; width: 100%; overflow: hidden; }
         .container { display: flex; width: 100vw; height: 100vh; }
 
         /* Panel kiri */
+=======
+        /* --- RESET & BASE --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body, html { height: 100%; width: 100%; overflow: hidden; }
+
+        /* --- LAYOUT --- */
+        .container { display: flex; width: 100vw; height: 100vh; }
+
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         .left-panel {
             width: 50%; background: linear-gradient(135deg, #a5c9fd 0%, #3d6ef5 100%);
             padding: 0 8%; color: white; display: flex; flex-direction: column; justify-content: center;
         }
         .logo-small { font-weight: 700; font-size: 28px; margin-bottom: 40px; }
+<<<<<<< HEAD
         .left-panel h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
         .left-panel p { font-size: 16px; font-weight: 300; opacity: 0.8; }
 
         /* Panel kanan */
+=======
+        .left-panel h3 { font-size: 18px; font-weight: 300; margin-bottom: 10px; opacity: 0.9; }
+        .left-panel h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
+        .left-panel p { font-size: 16px; font-weight: 300; opacity: 0.8; }
+
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         .right-panel {
             width: 50%; padding: 0 10%; display: flex; flex-direction: column; justify-content: center; background-color: white;
         }
 
+<<<<<<< HEAD
         .form-group { margin-bottom: 15px; width: 100%; max-width: 400px; position: relative; }
         .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: #333; }
         .form-group input { 
             width: 100%; padding: 14px; padding-right: 45px; background-color: #f0f4ff; border: 2px solid transparent; border-radius: 12px;
             outline: none; font-size: 14px; transition: 0.3s;
+=======
+        /* --- FORM ELEMENTS --- */
+        .form-group { margin-bottom: 15px; width: 100%; max-width: 400px; position: relative; }
+        .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: #333; }
+        
+        .input-wrapper { position: relative; width: 100%; }
+        .form-group input { 
+            width: 100%; padding: 14px; padding-right: 45px; background-color: #f0f4ff; border: 2px solid transparent; border-radius: 12px; outline: none; font-size: 14px; transition: 0.3s;
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         }
         .form-group input:focus { border-color: #3d6ef5; background-color: #fff; }
 
         .toggle-pass { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #3d6ef5; }
 
+<<<<<<< HEAD
         /* Syarat password */
         .requirements { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 10px; padding-left: 5px; }
         .requirements li { font-size: 10px; color: #ff4d4d; display: flex; align-items: center; gap: 6px; transition: 0.3s; }
@@ -43,21 +71,64 @@
         .requirements li i { font-size: 11px; }
 
         /* Tombol daftar */
+=======
+        /* --- SYARAT PASSWORD (GRID & KECIL) --- */
+        .requirements { 
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 5px 10px; 
+            padding-left: 5px;
+        }
+        .requirements li { 
+            font-size: 10px; 
+            color: #ff4d4d; 
+            display: flex; 
+            align-items: center; 
+            gap: 6px; 
+            transition: 0.3s; 
+        }
+        .requirements li#char { grid-column: span 2; } /* Biar syarat 8 karakter memanjang sendiri */
+
+        .requirements li.valid { color: #2ecc71; }
+        .requirements li i { font-size: 11px; }
+
+        /* --- TOMBOL --- */
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         .btn-selanjutnya {
             background-color: #0022cc; color: white; width: 100%; max-width: 400px; padding: 16px;
             border-radius: 12px; border: none; font-weight: 700; font-size: 16px; cursor: pointer;
             text-decoration: none; display: flex; align-items: center; justify-content: center; 
+<<<<<<< HEAD
             transition: 0.3s; margin-top: 20px; opacity: 0.5; pointer-events: none;
         }
         .btn-selanjutnya.active { opacity: 1; pointer-events: auto; box-shadow: 0 4px 15px rgba(0, 34, 204, 0.2); }
+=======
+            transition: 0.3s; margin-top: 20px; 
+            
+            /* Kondisi mati di awal */
+            opacity: 0.5; 
+            pointer-events: none; 
+        }
+        .btn-selanjutnya.active { 
+            opacity: 1; 
+            pointer-events: auto; 
+            box-shadow: 0 4px 15px rgba(0, 34, 204, 0.2);
+        }
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         .btn-selanjutnya:hover { background-color: #001999; transform: scale(1.02); }
     </style>
 </head>
 <body>
     <div class="container">
+<<<<<<< HEAD
         <!-- Panel kiri -->
         <div class="left-panel">
             <a href="{{ route('welcome') }}" style="text-decoration:none; color:white;">
+=======
+        <div class="left-panel">
+            <a href="{{ route('home') }}" style="text-decoration:none; color:white;">
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
                 <div class="logo-small">TrustPay.id 🛡️</div>
             </a>
             <h3>Halo, selamat datang!</h3>
@@ -65,7 +136,10 @@
             <p>Kelola semua pembayaran Anda dalam satu akun.</p>
         </div>
 
+<<<<<<< HEAD
         <!-- Panel kanan -->
+=======
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         <div class="right-panel">
             <div class="form-group">
                 <label>Nama Pengguna</label>
@@ -93,12 +167,20 @@
                 </ul>
             </div>
 
+<<<<<<< HEAD
             <!-- Perbaikan di sini -->
             <a href="{{ route('pin.daftar') }}" id="btnNext" class="btn-selanjutnya">Selanjutnya</a>
+=======
+            <a href="{{ route('halaman.pin') }}" id="btnNext" class="btn-selanjutnya">Selanjutnya</a>
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         </div>
     </div>
 
     <script>
+<<<<<<< HEAD
+=======
+        // Fungsi Lihat/Sembunyi Password
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         function togglePass(icon) {
             const p = document.getElementById('passInput');
             if (p.type === "password") {
@@ -110,12 +192,20 @@
             }
         }
 
+<<<<<<< HEAD
+=======
+        // Fungsi Validasi Semua Input
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
         function validateAll() {
             const user = document.getElementById('username').value.trim();
             const contact = document.getElementById('contact').value.trim();
             const pass = document.getElementById('passInput').value;
             const btn = document.getElementById('btnNext');
 
+<<<<<<< HEAD
+=======
+            // Cek syarat password satu-satu
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
             const checks = {
                 char: pass.length >= 8,
                 upper: /[A-Z]/.test(pass),
@@ -138,6 +228,10 @@
                 }
             }
 
+<<<<<<< HEAD
+=======
+            // Aktifkan tombol jika Username + Contact terisi DAN Password valid
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
             if (user !== "" && contact !== "" && passIsValid) {
                 btn.classList.add('active');
             } else {
@@ -146,4 +240,8 @@
         }
     </script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 8bb86d9c38a8b77f38fc62449d04b40ca573611d
